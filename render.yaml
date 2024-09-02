@@ -3,4 +3,5 @@ services:
   name: flask-app    
   env: python    
   buildCommand: ""    
-  startCommand: "python run.py"    rootDirectory: "/titanic-flask-app"
+  startCommand: "python run.py"    
+  rootDirectory: "./"
