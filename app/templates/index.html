@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic Survival Prediction</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Titanic Survival Prediction</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <label for="pclass">Passenger Class (1-3):</label>
+      <input type="number" id="pclass" name="pclass" required />
+
+      <label for="age">Age (1-100):</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="sibsp">Siblings/Spouses Aboard (0-No, 1-Yes):</label>
+      <input type="number" id="sibsp" name="sibsp" required />
+
+      <label for="parch">Parents/Children Aboard (0-No,1-Yes):</label>
+      <input type="number" id="parch" name="parch" required />
+
+      <label for="fare">Fare: (>0)</label>
+      <input type="number" id="fare" name="fare" required />
+
+      <label for="sex">Sex (0=Female, 1=Male):</label>
+      <input type="number" id="sex" name="sex" required />
+
+      <label for="embarked"
+        >Port of Embarkation (0=2nd Class, 1=3rd Class, 2=1st Class):</label
+      >
+      <input type="number" id="embarked" name="embarked" required />
+
+      <button type="submit">Predict</button>
+    </form>
+  </body>
+</html>
